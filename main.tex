@@ -1,0 +1,58 @@
+\documentclass{my_class}
+% ==============================================================================
+% Academic Document LaTeX Template
+% Author: Marco Tijbout
+% License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+% ------------------------------------------------------------------------------
+% You are free to share, adapt, and modify this template for personal and 
+% academic purposes, provided that:
+%   1. Attribution is given ("Based on the template by Marco Tijbout").
+%   2. It is not used for commercial purposes or resold.
+%   3. Any derivative versions are distributed under the same license (CC BY-NC-SA 4.0).
+% 
+% For full license details, visit: https://creativecommons.org/licenses/by-nc-sa/4.0/
+% ==============================================================================
+
+\addbibresource{references.bib}
+
+\title{This is the title of the report}
+\author{Author Name}
+\date{July 2026}
+
+\institution{University of ABCD Online}
+\affiliation{at  EFGH College Z\"urich}
+\reporttype{This describes the report type --- Part N}
+\coursename{This is the name of the course}
+\gnumber{G12345678}
+\supervisor{Name Professor }
+\degreetitle{Master of Science in Artificial Intelligence}
+
+\input{chapters/acronyms}
+
+\begin{document}
+	
+% --- Begin of the document section ---	
+	\input{chapters/title}
+	\input{chapters/declaration}
+	\input{chapters/abstract}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\input{chapters/introduction}
+	\input{chapters/methodology}
+	\input{chapters/results}
+	\input{chapters/conclusion}
+	\input{chapters/template}
+
+% --- End of the document section ---
+
+% --- Begin of any appendices at the end of the document.
+	
+	\appendix
+	\printbibliography[title={References}, heading=bibintoc]  % Making sure it is listed in the TOC
+	\printglossary[type=\acronymtype, title={List of Abbreviations}]		
+	\input{chapters/appendix_submitted_files}
+
+% --- End of any appendices 	
+\end{document}

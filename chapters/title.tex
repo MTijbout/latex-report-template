@@ -1,0 +1,46 @@
+% !TEX root = ../main.tex
+% Custom title page, replacing the default \maketitle output.
+% Fields (\title, \author, \date, \institution, etc.) are set in
+% main.tex before this file is \input.
+
+\makeatletter
+\begin{titlepage}
+    \centering
+
+    {\Large \@institution \par}
+    \vspace{0.2cm}
+    {\large \@affiliation \par}
+
+    \vspace{1cm}
+    \rule{\linewidth}{0.6pt}
+    \vspace{0.8cm}
+
+    {\huge\bfseries \@title \par}
+
+    \vspace{0.8cm}
+    \rule{\linewidth}{0.6pt}
+    \vspace{0.5cm}
+
+    {\Large \@reporttype \par}
+    \vspace{0.3cm}
+    {\large \@coursename \par}
+
+    \vspace{2.5cm}
+
+    {\Large \MakeUppercase{\@author} \par}
+    \vspace{0.3cm}
+    {\normalsize G Number: \@gnumber \par}
+    \vspace{0.2cm}
+    {\normalsize Supervisor: \MakeUppercase {\@supervisor} \par}
+
+    \vfill
+
+    {\normalsize Submitted in partial satisfaction of the requirements for the degree of \par}
+    \vspace{0.2cm}
+    {\normalsize \@degreetitle \par}
+
+    \vspace{1cm}
+    {\normalsize \@date \par}
+
+\end{titlepage}
+\makeatother
